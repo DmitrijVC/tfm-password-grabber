@@ -1,0 +1,28 @@
+[package]
+name = "tfm-password-grabber"
+version = "0.1.0"
+edition = "2018"
+authors = ["FssAy"]
+
+[lib]
+crate-type = ["dylib"]
+
+[dependencies]
+libc = "0.2.*"
+
+[dependencies.winapi]
+version = "0.3.9"
+features = [
+    "processthreadsapi",
+    "winnt",
+    "memoryapi",
+    "minwindef",
+    "psapi",
+    "errhandlingapi",
+    "consoleapi",
+    "libloaderapi",
+    "vadefs",
+    "wincon",
+    "handleapi",
+    "winbase",
+]
